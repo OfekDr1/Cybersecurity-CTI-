@@ -49,22 +49,23 @@ sequenceDiagram
     Attacker->>Attacker: Initiates public extortion demands and data leak threats
 ```
 
-### MITRE ATT&CK Mapping
+ ### MITRE ATT&CK Mapping
 
-| Tactic | Description | Technique |
+| Tactic | Technique | Description |
 | :--- | :--- | :--- |
-| Reconnaissance | Gathering preliminary information about the target and its infrastructure to plan the attack | T1596.003 Search Open Technical Databases: Digital Certificates |
-| Reconnaissance | Gathering preliminary information about the target and its infrastructure to plan the attack | T1596.005 Search Open Technical Databases: Scan Databases |
-| Reconnaissance | Gathering preliminary information about the target and its infrastructure to plan the attack | T1595.002 Active Scanning: Vulnerability Scanning |
-| Initial Access | Gaining an initial foothold within the target network | T1190 Exploit Public-Facing Application |
-| Defense Evasion | Hiding or disguising malicious activity to bypass security controls | T1027 Obfuscated Files or Information |
-| Execution | Running malicious code or commands on the targeted system | T1059.003 Command and Scripting Interpreter: Windows Command Shell |
-| Execution | Running malicious code or commands on the targeted system | T1059.004 Command and Scripting Interpreter: Unix Shell |
-| Persistence | Maintaining long-term access to the system across restarts | T1505.003 Server Software Component: Web Shell |
-| Discovery | Exploring and mapping the internal server environment, files, and configurations | T1082 System Information Discovery |
-| Discovery | Exploring and mapping the internal server environment, files, and configurations | T1016 System Network Configuration Discovery |
-| Credential Access | Stealing passwords and access tokens to expand control across systems | T1552.001 Unsecured Credentials: Credentials In Files |
-| Command and Control | Communicating with and managing compromised systems via attacker servers | T1090 Proxy |
-| Command and Control | Communicating with and managing compromised systems via attacker servers | T1219 Remote Access Software |
-| Exfiltration | Stealing and transferring sensitive data out of the target network | T1048 Exfiltration Over Alternative Protocol |
+| Reconnaissance | T1596.003 Search Open Technical Databases: Digital Certificates | Gathering preliminary information about the target and its infrastructure to plan the attack |
+| Reconnaissance | T1596.005 Search Open Technical Databases: Scan Databases | Gathering preliminary information about the target and its infrastructure to plan the attack |
+| Reconnaissance | T1595.002 Active Scanning: Vulnerability Scanning | Gathering preliminary information about the target and its infrastructure to plan the attack |
+| Initial Access | T1190 Exploit Public-Facing Application | Gaining an initial foothold within the target network |
+| Defense Evasion | T1027 Obfuscated Files or Information | Hiding or disguising malicious activity to bypass security controls |
+| Execution | T1059.003 Command and Scripting Interpreter: Windows Command Shell | Running malicious code or commands on the targeted system |
+| Execution | T1059.004 Command and Scripting Interpreter: Unix Shell | Running malicious code or commands on the targeted system |
+| Persistence | T1505.003 Server Software Component: Web Shell | Maintaining long-term access to the system across restarts |
+| Discovery | T1082 System Information Discovery | Exploring and mapping the internal server environment, files, and configurations |
+| Discovery | T1016 System Network Configuration Discovery | Exploring and mapping the internal server environment, files, and configurations |
+| Credential Access | T1552.001 Unsecured Credentials: Credentials In Files | Stealing passwords and access tokens to expand control across systems |
+| Command and Control | T1090 Proxy | Communicating with and managing compromised systems via attacker servers |
+| Command and Control | T1219 Remote Access Software | Communicating with and managing compromised systems via attacker servers |
+| Exfiltration | T1048 Exfiltration Over Alternative Protocol | Stealing and transferring sensitive data out of the target network |
+
 
