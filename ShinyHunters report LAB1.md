@@ -47,3 +47,22 @@ sequenceDiagram
     Internal->>Internal: Accesses adjacent internal nodes and administrative shares
     Attacker->>Internal: Compresses and exfiltrates corporate HR, payroll, and student data
     Attacker->>Attacker: Initiates public extortion demands and data leak threats
+
+### MITRE ATT&CK Mapping
+
+| Tactic | Technique |
+| :--- | :--- |
+| Reconnaissance | T1596.003 Search Open Technical Databases: Digital Certificates |
+| Reconnaissance | T1596.005 Search Open Technical Databases: Scan Databases |
+| Reconnaissance | T1595.002 Active Scanning: Vulnerability Scanning |
+| Initial Access | T1190 Exploit Public-Facing Application |
+| Defense Evasion | T1027 Obfuscated Files or Information |
+| Execution | T1059.003 Command and Scripting Interpreter: Windows Command Shell |
+| Execution | T1059.004 Command and Scripting Interpreter: Unix Shell |
+| Persistence | T1505.003 Server Software Component: Web Shell |
+| Discovery | T1082 System Information Discovery |
+| Discovery | T1016 System Network Configuration Discovery |
+| Credential Access | T1552.001 Unsecured Credentials: Credentials In Files |
+| Command and Control | T1090 Proxy |
+| Command and Control | T1219 Remote Access Software |
+| Exfiltration | T1048 Exfiltration Over Alternative Protocol |
