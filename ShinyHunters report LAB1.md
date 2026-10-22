@@ -51,19 +51,19 @@ sequenceDiagram
 
 ### MITRE ATT&CK Mapping
 
-| Tactic | Technique |
-| :--- | :--- |
-| Reconnaissance | T1596.003 Search Open Technical Databases: Digital Certificates |
-| Reconnaissance | T1596.005 Search Open Technical Databases: Scan Databases |
-| Reconnaissance | T1595.002 Active Scanning: Vulnerability Scanning |
-| Initial Access | T1190 Exploit Public-Facing Application |
-| Defense Evasion | T1027 Obfuscated Files or Information |
-| Execution | T1059.003 Command and Scripting Interpreter: Windows Command Shell |
-| Execution | T1059.004 Command and Scripting Interpreter: Unix Shell |
-| Persistence | T1505.003 Server Software Component: Web Shell |
-| Discovery | T1082 System Information Discovery |
-| Discovery | T1016 System Network Configuration Discovery |
-| Credential Access | T1552.001 Unsecured Credentials: Credentials In Files |
-| Command and Control | T1090 Proxy |
-| Command and Control | T1219 Remote Access Software |
-| Exfiltration | T1048 Exfiltration Over Alternative Protocol |
+| Tactic | Description | Technique |
+| :--- | :--- | :--- |
+| Reconnaissance | איסוף המידע הראשוני על היעד ותשתיותיו לצורך תכנון התקפה | T1596.003 Search Open Technical Databases: Digital Certificates |
+| Reconnaissance | איסוף המידע הראשוני על היעד ותשתיותיו לצורך תכנון התקפה | T1596.005 Search Open Technical Databases: Scan Databases |
+| Reconnaissance | איסוף המידע הראשוני על היעד ותשתיותיו לצורך תכנון התקפה | T1595.002 Active Scanning: Vulnerability Scanning |
+| Initial Access | החדירה וההשגה של דריסת הרגל הראשונית ברשת היעד | T1190 Exploit Public-Facing Application |
+| Defense Evasion | טשטוש עקבות והסוואת הפעילות כדי לחמוק ממנגנוני אבטחה | T1027 Obfuscated Files or Information |
+| Execution | הרצת קוד זדוני או פקודות בתוך המערכת | T1059.003 Command and Scripting Interpreter: Windows Command Shell |
+| Execution | הרצת קוד זדוני או פקודות בתוך המערכת | T1059.004 Command and Scripting Interpreter: Unix Shell |
+| Persistence | שמירה על אחיזה ויכולת גישה רציפה למערכת גם לאחר אתחול | T1505.003 Server Software Component: Web Shell |
+| Discovery | סריקה ולמידת סביבת השרת, הקבצים וההרשאות הפנימיות | T1082 System Information Discovery |
+| Discovery | סריקה ולמידת סביבת השרת, הקבצים וההרשאות הפנימיות | T1016 System Network Configuration Discovery |
+| Credential Access | גניבת סיסמאות ומפתחות גישה לטובת הרחבת השליטה במערכות | T1552.001 Unsecured Credentials: Credentials In Files |
+| Command and Control | תקשורת ושליטה מרחוק ברכיבים הנגועים דרך שרתי התקף | T1090 Proxy |
+| Command and Control | תקשורת ושליטה מרחוק ברכיבים הנגועים דרך שרתי התקף | T1219 Remote Access Software |
+| Exfiltration | הוצאה והברחה של מידע רגיש מתוך המערכת לשרת חיצוני | T1048 Exfiltration Over Alternative Protocol |
