@@ -48,3 +48,4 @@ sequenceDiagram
     Attacker->>Internal: Compresses and exfiltrates corporate HR, payroll, and student data
     Attacker->>Attacker: Initiates public extortion demands and data leak threats
 
+<img width="636" height="813" alt="Capture" src="https://github.com/user-attachments/assets/9dd4a14c-868c-42c8-ab1d-131987a83472" />
