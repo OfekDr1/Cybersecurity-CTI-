@@ -46,7 +46,7 @@ sequenceDiagram
     Attacker->>Internal: Runs automated credential-spraying scripts (_fanout.sh via sshpass)
     Internal->>Internal: Accesses adjacent internal nodes and administrative shares
     Attacker->>Internal: Compresses and exfiltrates corporate HR, payroll, and student data
-    Attacker->>Attacker: Initiates public extortion demands and data leak threats
+    Attacker->>Attacker: Initiates public extortion demands and data leak threats```
 
 ### MITRE ATT&CK Mapping
 
