@@ -14,18 +14,18 @@ students-
 
 Experiments
 ==
-**A**
-
+A
+--
 <img width="1813" height="423" alt="1" src="https://github.com/user-attachments/assets/0dd82970-d30d-47b8-864f-6c26c23b80c3" />
 
-Whats happend?
---
+**Whats happend?**
+
 Removing one failed-password out of the three records from 127.18.0.5 erased the T1110-Brute Force mitre tactics
 
-**B**
-
+B
+--
 <img width="1829" height="315" alt="image" src="https://github.com/user-attachments/assets/e61a4802-f71e-4c9c-a7db-d085783ac0b0" />
 
-Whats happend?
---
+**Whats happend?**
+
 Replacing IP failed-password into 3 different IPs and the T1110-Brute Force mitre tactics disappeared 
