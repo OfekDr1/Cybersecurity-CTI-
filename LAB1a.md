@@ -52,3 +52,26 @@ D
 **Whats happend?**
 
 Creating new Network scan detected log from another IP create new T1046 - Network Service Discovery detection 
+
+
+
+Simulator experiment 
+==
+<img width="994" height="293" alt="image" src="https://github.com/user-attachments/assets/156cec8f-2849-42e1-b1c6-b97f303a9911" />
+
+Activity D — Simulator Activity Observations:
+--
+Upon launching the simulator background process, the detector dynamically parsed the continuously appended log stream and identified multiple new synthetic events. Specifically, three new source IP addresses triggered T1046 (Network Service Discovery) findings (172.18.0.31, 172.18.0.33, and 172.18.0.32) due to injected explicit scan string messages, while a new source IP (172.18.0.22) triggered a T1110 (Brute Force) finding after accumulating three SSH password failures. The total finding count expanded from the baseline of 2 up to 6 findings (2 High severity, 4 Medium severity). Unlike the static manual experiments in Activity C, the simulator introduces stochastic event generation at roughly 10-second intervals. Because the log file continuously grows and the detector rescans the entire dataset on each interval, finding counts dynamically accumulate over time rather than remaining fixed, making exact event sequencing less deterministic and reproducible.
+
+
+
+SOC Incident Narrative & Analysis
+==
+Observed Facts:
+--
+Between 09:02 and 09:04 UTC on 2026-07-11, raw system logs recorded three sequential SSH authentication failures for user root originating from source IP 172.18.0.5 across ports 44231–44233. At 09:04:20 UTC, a log entry indicated explicit network scanning activity from IP 
+172.18.0.7 targeting ports 22, 80, 443, and 3306. Subsequent automated log generation introduced additional SSH failures from IP 172.18.0.22 and scan notices from IPs 172.18.0.31, 172.18.0.32, and 172.18.0.33.   
+
+Analyst Interpretation:
+--
+The activity from 172.18.0.5 and 172.18.0.22 aligns with MITRE ATT&CK technique T1110 (Brute Force), suggesting potential automated credential guessing. The activity from 172.18.0.7, 172.18.0.31, 172.18.0.32, and 172.18.0.33 corresponds to T1046 (Network Service Discovery), consistent with reconnaissance behavior. However, because detection rules rely strictly on threshold counts and hardcoded string matches, these rule triggers do not confirm successful unauthorized entry, attacker identity, malicious intent, or active compromise.
