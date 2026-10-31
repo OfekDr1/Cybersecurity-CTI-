@@ -1,8 +1,8 @@
 students-
 
-1.Ofek Drori
+1.Ofek Drori [GitHub](https://github.com/OfekDr1)
 
-2.David Voloshin
+2.David Voloshin [GitHub](https://github.com/dvolaid-oss)
 
 **Initial finding count from clean baseline: 2**
 
