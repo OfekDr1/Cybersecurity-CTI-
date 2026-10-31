@@ -59,7 +59,7 @@ Simulator experiment
 ==
 <img width="994" height="293" alt="image" src="https://github.com/user-attachments/assets/156cec8f-2849-42e1-b1c6-b97f303a9911" />
 
-Activity D — Simulator Activity Observations:
+Simulator Activity Observations:
 --
 Upon launching the simulator background process, the detector dynamically parsed the continuously appended log stream and identified multiple new synthetic events. Specifically, three new source IP addresses triggered T1046 (Network Service Discovery) findings (172.18.0.31, 172.18.0.33, and 172.18.0.32) due to injected explicit scan string messages, while a new source IP (172.18.0.22) triggered a T1110 (Brute Force) finding after accumulating three SSH password failures. The total finding count expanded from the baseline of 2 up to 6 findings (2 High severity, 4 Medium severity). Unlike the static manual experiments in Activity C, the simulator introduces stochastic event generation at roughly 10-second intervals. Because the log file continuously grows and the detector rescans the entire dataset on each interval, finding counts dynamically accumulate over time rather than remaining fixed, making exact event sequencing less deterministic and reproducible.
 
