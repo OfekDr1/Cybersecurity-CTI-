@@ -36,3 +36,19 @@ B
 **Whats happend?**
 
 Replacing IP failed-password into 3 different IPs and the T1110-Brute Force mitre tactics disappeared 
+
+C
+--
+<img width="998" height="176" alt="image" src="https://github.com/user-attachments/assets/b979d583-413b-4418-9478-728e36a518d1" />
+
+**Whats happend?**
+
+Adding new 3 failed password from a new IP 192.0.2.55 create another T1110-Brute Force so now we have 2 T1110-Brute Force one from 192.0.2.55 and second from 127.18.0.5
+
+D
+--
+<img width="985" height="177" alt="image" src="https://github.com/user-attachments/assets/5243c36e-e863-459a-aaad-d0bf080313ea" />
+
+**Whats happend?**
+
+Creating new Network scan detected log from another IP create new T1046 - Network Service Discovery detection 
